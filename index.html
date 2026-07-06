@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="mystyle.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
+   //testing first//
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">N/N's</div>
             <ul class="nav-menu">
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#about" class="nav-link">How it Works</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
             </ul>
-            <a href="#contact" class="btn-join">Join Us</a>
+            <a href="contact.html" class="btn-join">Join Us</a>
         </div>
     </nav>
 
@@ -27,7 +28,11 @@
             <p>are you lost in the creative world? Look no further because we are here.<br>Get quality work done by professionals</p>
             <div class="search-box">
                 <input type="text" placeholder="What service are you looking for?" />
-                <button>Search</button>
+                <button type="button" onclick="window.location.href='services.html'">Search</button>
+            </div>
+            <div style="margin-top: 24px;">
+                <a href="services.html" class="btn-secondary">View Services</a>
+                <a href="contact.html" class="btn-cta">Contact Us</a>
             </div>
         </div>
     </section>
@@ -36,32 +41,54 @@
     <section class="services" id="services">
         <h2>Services we Offer</h2>
         <div class="gigs-container">
-            <div class="gig-card">
+            <a href="services.html" class="gig-card">
                 <div class="gig-image">Image here grr</div>
                 <h3>Commission Clothes</h3>
                 <p>Get custom clothing designs and commissions</p>
                 <div class="gig-rating">
                     <span class="price">$25</span>
                 </div>
-            </div>
-            <div class="gig-card">
+            </a>
+            <a href="services.html" class="gig-card">
                 <div class="gig-image">And another image here smh</div>
                 <h3>Commission UGCS</h3>
                 <p>Create unique and personalized UGCS</p>
                 <div class="gig-rating">
                     <span class="price">$30</span>
                 </div>
-            </div>
+            </a>
         </div>
     </section>
 
     
 
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Choose a Service</h3>
+                <p>Select the type of work you need and review our offerings.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Submit Your Request</h3>
+                <p>Tell us what you want, and our team will match you with the right creator.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Review the Result</h3>
+                <p>Approve the final work, or request revisions to make it perfect.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Call to Action Section -->
     <section class="cta" id="contact">
         <h2>Become an artist</h2>
         <p>Join Hundreds of creators</p>
-        <a href="mailto:your-email@example.com" class="btn-cta">Contact Us Today</a>
+        <a href="contact.html" class="btn-cta">Contact Us</a>
     </section>
 
     <!-- Footer -->
@@ -70,8 +97,8 @@
             <div class="footer-section">
                 <h4>Company</h4>
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
                     <li><a href="#">Blog</a></li>
                 </ul>
             </div>
