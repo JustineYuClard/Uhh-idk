@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     background-color: #0f0f0f;
@@ -192,19 +196,107 @@ body {
     color: #e0e0e0;
 }
 
+/* About Section */
+.about {
+    background-color: #0f0f0f;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #e0e0e0;
+}
+
+.founders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.founder-card {
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.founder-photo {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #242424 0%, #1a1a1a 100%);
+    color: #888;
+    border: 2px dashed #444;
+    font-size: 16px;
+    padding: 16px;
+}
+
+.founder-card h3 {
+    color: #e0e0e0;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.founder-card p {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+.company-description {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.company-description h3 {
+    color: #e0e0e0;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.company-description p {
+    color: #ccc;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .gigs-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
 }
 
-.gig-card {
+.gig-card,
+.gig-card a {
     background-color: #1a1a1a;
     border-radius: 8px;
     overflow: hidden;
     transition: all 0.3s ease;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+.gig-card:hover,
+.gig-card a:hover {
+    box-shadow: 0 8px 16px rgba(29, 191, 115, 0.2);
+    transform: translateY(-8px);
 }
 
 .gig-card:hover {
@@ -324,7 +416,8 @@ body {
     opacity: 0.95;
 }
 
-.btn-cta {
+.btn-cta,
+.btn-secondary {
     display: inline-block;
     background-color: white;
     color: #1dbf73;
@@ -334,6 +427,17 @@ body {
     font-weight: 700;
     font-size: 14px;
     transition: all 0.3s ease;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #e0e0e0;
+    border: 2px solid #1dbf73;
+}
+
+.btn-secondary:hover {
+    background-color: #1dbf73;
+    color: white;
 }
 
 .btn-cta:hover {
